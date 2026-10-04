@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>JIZURA — 歌词动态视频制作工具</title>
 <meta name="description" content="在浏览器中把歌词做成动态歌词视频，并导出 MP4。">
-<link rel="canonical" href="https://zhijunguo588-boop.github.io/JIZURA/zh-hans/">
-<link rel="alternate" hreflang="ja" href="https://zhijunguo588-boop.github.io/JIZURA/">
-<link rel="alternate" hreflang="en" href="https://zhijunguo588-boop.github.io/JIZURA/en/">
-<link rel="alternate" hreflang="zh-Hant" href="https://zhijunguo588-boop.github.io/JIZURA/zh-hant/">
-<link rel="alternate" hreflang="zh-Hans" href="https://zhijunguo588-boop.github.io/JIZURA/zh-hans/">
-<link rel="alternate" hreflang="ko" href="https://zhijunguo588-boop.github.io/JIZURA/ko/">
-<link rel="alternate" hreflang="id-ID" href="https://zhijunguo588-boop.github.io/JIZURA/id/">
-<link rel="alternate" hreflang="vi" href="https://zhijunguo588-boop.github.io/JIZURA/vi/">
+<link rel="canonical" href="https://852wa.github.io/JIZURA/zh-hans/">
+<link rel="alternate" hreflang="ja" href="https://852wa.github.io/JIZURA/">
+<link rel="alternate" hreflang="en" href="https://852wa.github.io/JIZURA/en/">
+<link rel="alternate" hreflang="zh-Hant" href="https://852wa.github.io/JIZURA/zh-hant/">
+<link rel="alternate" hreflang="zh-Hans" href="https://852wa.github.io/JIZURA/zh-hans/">
+<link rel="alternate" hreflang="ko" href="https://852wa.github.io/JIZURA/ko/">
+<link rel="alternate" hreflang="id-ID" href="https://852wa.github.io/JIZURA/id/">
+<link rel="alternate" hreflang="vi" href="https://852wa.github.io/JIZURA/vi/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="JIZURA — 歌词动态视频制作工具">
 <meta property="og:description" content="在浏览器中把歌词做成动态歌词视频，并导出 MP4。">
-<meta property="og:url" content="https://zhijunguo588-boop.github.io/JIZURA/zh-hans/">
+<meta property="og:url" content="https://852wa.github.io/JIZURA/zh-hans/">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -568,8 +568,8 @@ button.small.primary { padding: 4px 12px; }
           <button id="btnNext" class="ghost small icon-txt" title="前往下一个方案" aria-label="下一个">▶</button>
         </span>
         <button id="btnShuffle" class="accent" title="设置不变，只重新随机编排（锁定的行保持不变）">随机编排</button>
-        <select class="themeSel" aria-label="一键随机的主题" title="一键随机的主题（选择后，会在该方向内随机生成，并打开所需的部件开关）"><option value="">不指定主题</option><option value="lyricpv">文字PV</option><option value="kinetic">动态文字</option><option value="wa">和风</option><option value="horror">恐怖</option><option value="pop">流行</option><option value="ballad">抒情</option></select>
-        <button id="btnOmakase" class="primary" title="风格、氛围、特效、配色全部随机（快捷键 R）">一键随机</button>
+        <select class="themeSel" aria-label="一键生成的主题" title="一键生成的主题（选择后，会在该方向内随机生成，并打开所需的部件开关）"><option value="">不指定主题</option><option value="lyricpv">文字PV</option><option value="kinetic">动态文字</option><option value="wa">和风</option><option value="horror">恐怖</option><option value="pop">流行</option><option value="ballad">抒情</option></select>
+        <button id="btnOmakase" class="primary" title="风格、氛围、特效、配色全部随机（快捷键 R）">一键生成</button>
       </div>
       <div class="tl-bar">
         <span class="tl-hint muted">拖动行分隔标记（上方刻度）可调整位置。按住 <span class="kbd">Shift</span> 则不吸附节拍</span>
@@ -598,7 +598,7 @@ button.small.primary { padding: 4px 12px; }
       <div id="easyPanel" class="easy" hidden>
         <div class="easy-hero">
           <button id="btnOmakaseBig" class="omakase">一键生成</button>
-          <label class="theme-row">主题<select class="themeSel" aria-label="一键随机的主题"><option value="">不指定主题</option><option value="lyricpv">文字PV</option><option value="kinetic">动态文字</option><option value="wa">和风</option><option value="horror">恐怖</option><option value="pop">流行</option><option value="ballad">抒情</option></select><small class="muted">选择后，会在该方向内随机生成</small></label>
+          <label class="theme-row">主题<select class="themeSel" aria-label="一键生成的主题"><option value="">不指定主题</option><option value="lyricpv">文字PV</option><option value="kinetic">动态文字</option><option value="wa">和风</option><option value="horror">恐怖</option><option value="pop">流行</option><option value="ballad">抒情</option></select><small class="muted">选择后，会在该方向内随机生成</small></label>
           <p class="hint">每按一次，风格、氛围、动态、配色、编排都会整体改变。也可以按键盘上的 <span class="kbd">R</span> 键执行。</p>
           <div class="hist-row">
             <button id="btnPrev2" class="ghost">◀ 上一个</button>
@@ -3450,7 +3450,7 @@ J.defaultProject = () => ({
   themeId: null,                  // おまかせのテーマ (J.THEMES key) — only おまかせ reads it
   title: '', artist: '',
   lyrics: J.SAMPLE_LYRICS,
-  style: 'noir', mood: null,
+  style: 'ocean', mood: null,
   extra: false,                   // random picks may use the parts added after the first version (追加分)
   wa: true,                       // …and the 和風 motifs (提灯・障子・家紋…) — applied after 'extra'
   horror: false,                  // parts sets (independent of 'extra'): ホラー (also enables the ホラー mood)
@@ -36776,7 +36776,7 @@ function rerollCurrentCut(kind) {
   replan();
   commit();
   seek(t0);
-  toast(kind === 'omakase' ? '这个镜头一键随机' : '随机编排这个镜头');
+  toast(kind === 'omakase' ? '这个镜头一键生成' : '随机编排这个镜头');
 }
 function updateCutInfo() {
   const cut = J.cutAt(S.plan, S.t);
@@ -36814,7 +36814,7 @@ function updateCutInfo() {
     bits.push(`<button type="button" class="chip ${cls}${forced ? ' is-forced' : ''}" data-g="${g}" aria-pressed="${cutPick.g === g ? 'true' : 'false'}" ${k < 0 ? 'disabled' : ''}><b>${label}</b>${escapeHtml(groupName(g, cutGroupVal(cut, g)))}</button>`);
   });
   bits.push(`<button type="button" class="ghost small cut-roll" data-roll="shuffle" ${k < 0 ? 'disabled' : ''} title="只重新抽选这个镜头的编排">随机编排</button>`);
-  bits.push(`<button type="button" class="ghost small cut-roll accent" data-roll="omakase" ${k < 0 ? 'disabled' : ''} title="只把这个镜头的手法随机化">一键随机</button>`);
+  bits.push(`<button type="button" class="ghost small cut-roll accent" data-roll="omakase" ${k < 0 ? 'disabled' : ''} title="只把这个镜头的手法随机化">一键生成</button>`);
   el.innerHTML = bits.join('');
   if (k >= 0) {
     el.querySelectorAll('button.chip[data-g]').forEach(b => b.addEventListener('click', () => toggleCutPick(b.dataset.g, cut, k)));
@@ -37358,7 +37358,7 @@ function lockBtn(k, anchor) {                     // lock button for effects tha
   return b;
 }
 
-/* ---------------- 一键随机 ---------------- */
+/* ---------------- 一键生成 ---------------- */
 function restartPreview() { seek(0); if (!S.playing && S.mode !== 'pro') play(); }
 const themeName = th => { const o = document.querySelector(`.themeSel option[value="${th}"]`); return o ? o.textContent : th; };
 function omakase() {
@@ -37370,7 +37370,7 @@ function omakase() {
   Object.assign(S.project, r);
   restoreEnabled(keepE); restoreParams(keepP);
   fontKey = ''; syncUI(); replan(); commit();
-  toast((th ? `一键随机（${themeName(th)}）：` : '一键随机：') + `${J.STYLES[r.style].name} × ${J.MOODS[r.mood].name}`, r.colors.accentOn ? [r.colors.accent, r.colors.ghostA, r.colors.ghostB] : null);
+  toast((th ? `一键生成（${themeName(th)}）：` : '一键生成：') + `${J.STYLES[r.style].name} × ${J.MOODS[r.mood].name}`, r.colors.accentOn ? [r.colors.accent, r.colors.ghostA, r.colors.ghostB] : null);
   restartPreview();
 }
 // change just one aspect of the current look

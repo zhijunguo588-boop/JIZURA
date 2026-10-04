@@ -15,7 +15,7 @@ J.defaultProject = () => ({
   themeId: null,                  // おまかせのテーマ (J.THEMES key) — only おまかせ reads it
   title: '', artist: '',
   lyrics: J.SAMPLE_LYRICS,
-  style: 'noir', mood: null,
+  style: 'ocean', mood: null,
   extra: false,                   // random picks may use the parts added after the first version (追加分)
   wa: true,                       // …and the 和風 motifs (提灯・障子・家紋…) — applied after 'extra'
   horror: false,                  // parts sets (independent of 'extra'): ホラー (also enables the ホラー mood)
