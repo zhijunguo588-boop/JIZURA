@@ -23,7 +23,8 @@ MODULES = {
 COMMUNITY = {'zh-Hant': ('app.chinese', 'app/chinese.js'), 'ko': ('app.korean', 'app/korean.js')}
 # part-name scripts for editions without a community glossary (after app/english.js and the edition's own names)
 PART_NAMES = {'zh-Hans': 'app/chinese_hans.js'}
-BASE = 'https://852wa.github.io/JIZURA/'
+# site origin for canonical / hreflang / og:url — single source of truth。改这里，不要改打包出来的 index.html
+BASE = 'https://zhijunguo588-boop.github.io/JIZURA/'
 
 
 class _Merged:
