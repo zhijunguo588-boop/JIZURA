@@ -24,7 +24,7 @@ COMMUNITY = {'zh-Hant': ('app.chinese', 'app/chinese.js'), 'ko': ('app.korean', 
 # part-name scripts for editions without a community glossary (after app/english.js and the edition's own names)
 PART_NAMES = {'zh-Hans': 'app/chinese_hans.js'}
 # site origin for canonical / hreflang / og:url — single source of truth。改这里，不要改打包出来的 index.html
-BASE = 'https://zhijunguo588-boop.github.io/JIZURA/'
+BASE = 'https://jizura.dtzhijunguo.top/'
 
 
 class _Merged:
